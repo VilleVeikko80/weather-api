@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  //fetch("https://weather-api-thpb.onrender.com/weather?city=Oulu")
   fetch("http://localhost:3000/weather?city=Oulu")
     .then((response) => {
       if (!response.ok) {
