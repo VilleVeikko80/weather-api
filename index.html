@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="weather.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="weatherContainer">
+    <div id="weather">
+      <h3>Sää Oulussa</h3><br />
+
+      <div class="iconBox">
+        <p><span class="outputInfo" id="description"></p>
+        <span><img id="weatherIcon" src="" alt="Sääikoni"></span>
+        <p id="huomioTeksti"><span id="advice"></span></p>
+      </div>
+
+      <br />
+      <p class="outputName">Lämpötila: <span class="output" id="temperature"></span>°C</p>
+      <br />
+      <br />
+      <p class="outputName">Ilmanpaine: <span class="output" id="pressure"></span> hPa</p>
+      <p class="outputName">Ilmankosteus: <span class="output" id="humidity"></span>%</p>
+      <br />
+      <p class="outputName">Tuulen nopeus: <span class="output" id="speed"></span> m/s</p>
+      <p class="outputName">Tuulen suunta: <span class="output" id="deg"></span> astetta</p>
+      <br />
+      <p class="outputName">Auringonnousu: <span class="output" id="sunrise"></span></p>
+      <p class="outputName">Auringonlasku: <span class="output" id="sunset"></span></p>
+
+    </div>
+  </div>
+
+  <script src="weather.js"></script>
+  <script src="frontend.js"></script>
+</body>
+
+</html>

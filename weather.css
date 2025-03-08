@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+.weatherContainer {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px 50px 10px;
+  border-radius: 10px;
+  background-color: #a3daff;
+  color: #1e1e2f;
+  /*box-shadow: 0 4px 8px rgba(173, 216, 230, 0.6),
+    0 6px 20px rgba(173, 216, 230, 0.4);
+  */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5),
+    /* Syvempi, tummempi varjo */ 0 10px 30px rgba(163, 218, 255, 0.8);
+}
+
+.weatherContainer h3 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.outputName {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+}
+
+.outputInfo {
+  font-family: "Bebas Neue", sans-serif;
+}
