@@ -37,7 +37,7 @@ body {
 }
 
 #currentDay {
-  font-family: "Arial", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: normal;
   color: #555; /* Vaaleampi harmaa */
@@ -45,7 +45,7 @@ body {
 }
 
 #currentTime {
-  font-family: "Arial", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: normal;
   color: #555; /* Vaaleampi harmaa */
