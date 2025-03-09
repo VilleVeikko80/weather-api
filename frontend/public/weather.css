@@ -36,6 +36,21 @@ body {
   font-size: 32px;
 }
 
+#currentDay {
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #555; /* Vaaleampi harmaa */
+  margin-bottom: 5px; /* Pieni väli kellonaikaan */
+}
+
+#currentTime {
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #555; /* Vaaleampi harmaa */
+}
+
 .outputName {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;

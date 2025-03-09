@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("https://weather-api-thpb.onrender.com/weather?city=Oulu")
-    //fetch("http://localhost:3000/weather?city=Oulu")
+  //fetch("https://weather-api-thpb.onrender.com/weather?city=Oulu")
+  fetch("http://localhost:3000/weather?city=Oulu")
     .then((response) => {
       if (!response.ok) {
         throw new Error(
@@ -39,3 +39,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     .catch((error) => console.error("Error fetching weather:", error));
 });
+
+//Funktio, joka asettaa nykyisen päivämäärän HTML-sivuun
+function showCurrentDate() {
+  const dateElement = document.getElementById("currentDay");
+  const timeElement = document.getElementById("currentTime");
+
+  // Haetaan nykyinen päivämäärä
+  const today = new Date();
+
+  // Muotoillaan tyliin: Sunnuntai 9. maaliskuu 2025
+  const options = {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  };
+  let formattedDate = today.toLocaleDateString("fi-FI", options);
+
+  // Tehdään viikonpäivän ensimmäinen kirjain isoksi
+  formattedDate =
+    formattedDate.charAt(0).toLocaleUpperCase() + formattedDate.slice(1);
+
+  // Haetaan kellonaika muodossa HH.MM
+  const timeOptions = { hour: "2-digit", minute: "2-digit" };
+  const formattedTime = today.toLocaleTimeString("fi-FI", timeOptions);
+
+  dateElement.textContent = formattedDate;
+  timeElement.textContent = `klo ${formattedTime}`;
+}
+// Kutsu funktiota, kun sivu latautuu
+document.addEventListener("DOMContentLoaded", showCurrentDate);
